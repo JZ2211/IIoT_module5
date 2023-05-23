@@ -17,7 +17,7 @@ def savedata_locally(output, datatype): #output = timestamp and all the data, da
     else:
         #if not, creat the new file and write the field tilte headings into the date log file first
         timelog = open(filename, 'w', buffering=1)
-        timelog.write(datatype)
+        timelog.write(datatype + "\n")
         timelog.write(output + "\n")
         timelog.close()
     return
