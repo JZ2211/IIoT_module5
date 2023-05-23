@@ -37,4 +37,5 @@ try:
       time.sleep(4.85) #data are collected roughly every 5 second
 
 except KeyboardInterrupt:
+      print("\nUser interrupt")
       sys.exit(0)
