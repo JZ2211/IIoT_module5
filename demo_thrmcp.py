@@ -24,7 +24,7 @@ try:
       timestamp = str(datetime.now()) #obtain current time
      
       #thermocouple result
-      typeK_temperature = themcp.temperature #obtain the ambient temprature in Celsius degree
+      typeK_temperature = thmcp.temperature #obtain the ambient temprature in Celsius degree
 
       timestamp = re.sub(' ',', ', timestamp)
       output = timestamp + ", {0:.1f}".format(typeK_temperature)
