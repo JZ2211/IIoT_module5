@@ -1,5 +1,5 @@
-#implementation of BME280/BME680 and MCP9600/thermocouple interfacing with Raspberry Pi
-#data are saved in a file named after the date
+#Implementation of BME280/BME680 and MCP9600/thermocouple interfacing with Raspberry Pi
+#Sensing data are saved in a file named after the date
 #Jin Zhu created 5/25/2023
 
 import time
