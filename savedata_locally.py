@@ -5,7 +5,7 @@ from os import path
 import re
 
 def savedata_locally(output, datatype): #output = timestamp and all the data, datatype = field title headings
-    logdate = timestamp.split(',')[0]  #obtain the date information for the log file name
+    logdate = output.split(',')[0]  #obtain the date information for the log file name
     filename = 'log_' + re.sub('-','_', logdate)+ '.txt' #log file will be named as log_yyyy_mm_dd.txt
     """Write to this Rpi locally"""
     if path.exists(filename): #is the file already here?
