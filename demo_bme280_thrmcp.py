@@ -40,7 +40,7 @@ try:
 
       timestamp = re.sub(' ',', ', timestamp)
       #timestamp = timestamp.split('.')[0] #uncomment this line if omitting subseconds time information
-      output = timestamp + ", {0:.2f}, {1:.2f}, {2:.2f},{2:.2f}".format(temperature, pressure, humidity, typeK_tmp)
+      output = timestamp + ", {0:.2f}, {1:.2f}, {2:.2f}, {3:.2f}".format(temperature, pressure, humidity, typeK_tmp)
 
       print(output)  #display results in the terminal
       document(output, datatype)  #save data into a local text file
