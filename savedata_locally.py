@@ -5,7 +5,6 @@ from os import path
 import re
 
 def savedata_locally(output, datatype): #output = timestamp and all the data, datatype = field title headings
-    timestamp = output.split('.')[0] #obtain the timestamp and omit subseconds time information
     logdate = timestamp.split(',')[0]  #obtain the date information for the log file name
     filename = 'log_' + re.sub('-','_', logdate)+ '.txt' #log file will be named as log_yyyy_mm_dd.txt
     """Write to this Rpi locally"""
