@@ -7,6 +7,7 @@ from datetime import datetime
 import re
 import sys
 import board
+from savedata_locally import savedata_locally as document
 from adafruit_ads1x15.ads1115 import ADS1115
 #for ADS1015: use the next line instead
 #from adafruit_ads1x15.ads1015 import ADS1015
@@ -34,7 +35,7 @@ adc = ADS1115(i2cbus)
 # See table 3 in the ADS1015/ADS1115 datasheet for more info on gain.
 
 
-datatype ="Date, Time, voltage (V) \n"
+datatype ="Date, Time, voltage (V) "
 
 #obtain single-ended analog data input from channel A0
 chan = AnalogIn(adc, 0)
