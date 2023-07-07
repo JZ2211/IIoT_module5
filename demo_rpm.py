@@ -38,7 +38,7 @@ try:
   init_interrupt(channel)
   start_timer = time.time()
   previousCount = 0
-  print("starting...\n")
+  print("starting... \n RPM:")
   while (True):
     time.sleep(1)
     if (elapse != 0) and (previousCount!= pulseCount):
