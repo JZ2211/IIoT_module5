@@ -17,7 +17,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 
-Adafruit_BME280 bme280; //I2C
+Adafruit_BME280 bme280; 
 
 void setup() {
   Serial.begin(115200);         // Start the Serial communication to send messages to the computer
