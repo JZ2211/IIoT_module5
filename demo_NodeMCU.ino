@@ -19,6 +19,7 @@
 
 Adafruit_BME280 bme280; 
 
+//setup() function only runs once
 void setup() {
   Serial.begin(115200);         // Start the Serial communication to send messages to the computer
   while (!Serial) {} //wait till serial is connected  
@@ -36,7 +37,6 @@ void setup() {
         Serial.print("        ID of 0x61 represents a BME 680.\n");
         while (1) delay(10);  //stop the code here if BME280/680 is not found
   }
-
 }
 
 //the loop() function will repeat running forever
