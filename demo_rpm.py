@@ -1,6 +1,10 @@
-#Demo: reading falling edge triggered pulses from pin GPIO_26 
-#    Determine the RPM based on the elasped time between pulses
-#Jin Zhu  Created 06/05/2023
+# RPi GPIO Demo: 
+#  Read falling edge triggered pulses from a hall effect sensor via pin GPIO_26 
+#  Determine the RPM based on the elasped time between pulses
+#
+# Created on 06/05/2023 
+# by Jin Zhu
+# MIT license
 
 import RPi.GPIO as GPIO
 import time
