@@ -1,6 +1,8 @@
-#demo: thermocouple & MCP9600 interfacing with Raspberry Pi
+# Demo: 
+# Interface a thermocouple via MCP9600 with a Raspberry Pi
 #
-#Jin Zhu created 5/24/2023
+# Created 5/24/2023
+# By Jin Zhu
 
 import time
 from datetime import datetime
