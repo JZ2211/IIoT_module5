@@ -17,7 +17,7 @@
 #include <Adafruit_Sensor.h>
 #include <Adafruit_BME280.h>
 
-Adafruit_BME280 bme280; 
+Adafruit_BME280 bme280;
 
 //setup() function only runs once
 void setup() {
@@ -39,13 +39,16 @@ void setup() {
   }
 }
 
-//the loop() function will repeat running forever
+//loop() function will repeat running forever
 void loop() {
   unsigned int temperature, pressure, humidity;
+
+  //obtain the results
   temperature = bme280.readTemperature(); 
   pressure = bme280.readPressure();
   humidity = bme280.readHumidity();
 
+  //display the reseults in the Serial Monitor
   Serial.print("Time Stamp(s)");
   Serial.println(millis()/1000);
   Serial.print(" Temperature (degC): ");
