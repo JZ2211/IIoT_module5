@@ -1,6 +1,8 @@
-#implementation of BME280 or BME680 interfacing with Raspberry Pi
-#data are saved in a file named after the date
-#Jin Zhu created 5/18/2023
+# Implementation of BME280 or BME680 interfacing with Raspberry Pi
+# Data are saved in a file named after the date
+#
+# Created 5/18/2023 
+# by Jin Zhu
 
 import time
 from datetime import datetime
