@@ -1,5 +1,9 @@
-#Store sensor data into a local file named after the date: log_yyyy_mm_dd.txt
-#Jin Zhu created 5/18/2023
+# Store sensor data into a local file named after the date: log_yyyy_mm_dd.txt
+# It is imported and used by other demo programs in Module 5. 
+#
+# Created 5/18/2023
+# By Jin Zhu
+# MIT License
 
 from os import path
 import re
