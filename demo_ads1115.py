@@ -1,6 +1,11 @@
-#Demo: implementation of reading analog input from a moisture sensor
-#    via a 16-bit ADC with I2C interface ADS1115  
-#Jin Zhu  Created 6/03/2023
+# ADS 1115 Demo
+# Read an analog input from a moisture sensor
+# via a 16-bit ADC with I2C interface ADS1115  
+#
+# Created 6/03/2023 by Jin Zhu 
+#
+# This is Under MIT License 
+#
 
 import time
 from datetime import datetime
@@ -9,7 +14,7 @@ import sys
 import board
 from savedata_locally import savedata_locally as document
 from adafruit_ads1x15.ads1115 import ADS1115
-#for ADS1015: use the next line instead
+#for ADS1015: uncomment next line by removing '#'
 #from adafruit_ads1x15.ads1015 import ADS1015
 from adafruit_ads1x15.analog_in import AnalogIn
 
@@ -33,7 +38,6 @@ adc = ADS1115(i2cbus)
 #  -   8 = +/-0.512V
 #  -  16 = +/-0.256V
 # See table 3 in the ADS1015/ADS1115 datasheet for more info on gain.
-
 
 datatype ="Date, Time, voltage (V) "
 
