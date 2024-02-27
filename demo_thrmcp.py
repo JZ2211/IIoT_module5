@@ -9,10 +9,12 @@ from datetime import datetime
 import re
 import sys
 import board
+import busio
 from adafruit_mcp9600 import MCP9600
 
 #MCP9600 setup
-i2cbus = board.I2C() #use default raspberry pi board SCL and SDA for I2C
+i2cbus = busio.I2C(board.SCL, board.SDA, frequency=100000 ) 
+#use default raspberry pi board SCL and SDA for I2C, set frequency is required for MCP9600 board
 #The default I2C address is 0x67 for adafruit MCP9600 board. range: 0x60-67
 #Indicate the thermocouple used is K type. The default type is K and other
 #options are 'J','T','N','S','E','B' or 'R'
