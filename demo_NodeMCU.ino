@@ -4,10 +4,10 @@
   Read temperature, pressure, and humidity data from an BME280 via I2C 
   and display the results in the Serial Monitor. 
 
-  Created June 8 2023 by Jin Zhu
+  Created June 8 2023
 
   This example code is under MIT license and available at 
-  https://github.com/JZ2211/IIoT_module5/blob/main/demo_NodeMCU.ino
+  https://github.com/JZ2211/IIoT_wk4/blob/main/demo_NodeMCU.ino
 
 */
 
